@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+@media (max-width:375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
+
+.mainbox {
+  border-radius: 15px;
+  width: 450px;
+  min-height: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 15px 15px -15px hsl(224, 23%, 55%);
+}
+
+.box {
+  margin: 30px 40px;
+}
+
+main>img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text {
+  margin-top: 20px;
+  color: hsl(224, 23%, 55%);
+  padding: 0 20px;
+  line-height: 30px;
+}
+
+.small-box {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.small-box img {
+  float: left;
+}
+
+.annual-plan {
+  float: left;
+  margin-left: 20px;
+  line-height: 25px;
+}
+
+.plan {
+  color: black;
+  font-weight: 700;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  float: right;
+  color: hsl(245, 75%, 52%);
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0 30px 20px -20px hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel {
+  display: block;
+  margin: 30px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%)
+}
+
+@media(max-width:375px) {
+  .mainbox {
+    width: 90%;
+    min-height: 600px;
+  }
+
+  .box {
+    margin: 30px 20px;
+  }
+}
