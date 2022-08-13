@@ -35,4 +35,4 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Author
 
 - Website - [J.Walczak](https://github.com/jwalczak94)
-- Frontend Mentor - [@jwalczak94](hhttps://www.frontendmentor.io/profile/jwalczak94)
+- Frontend Mentor - [@jwalczak94](https://www.frontendmentor.io/profile/jwalczak94)
