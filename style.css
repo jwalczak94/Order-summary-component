@@ -23,7 +23,7 @@ body {
 .mainbox {
   border-radius: 15px;
   width: 450px;
-  min-height: 700px;
+  min-height: 650px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -34,7 +34,7 @@ body {
 }
 
 .box {
-  margin: 30px 40px;
+  margin: 25px 40px;
 }
 
 main>img {
@@ -47,14 +47,14 @@ main>img {
   margin-top: 20px;
   color: hsl(224, 23%, 55%);
   padding: 0 20px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .small-box {
   float: left;
   width: 100%;
   box-sizing: border-box;
-  margin: 30px 0;
+  margin: 25px 0;
   padding: 20px;
   border-radius: 10px;
   background-color: hsl(225, 100%, 98%);
