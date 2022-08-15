@@ -5,36 +5,38 @@
   padding: 0;
 }
 
+:root {
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+
 body {
-  font-family: 'Red Hat Display', sans-serif;
-  background-color: hsl(225, 100%, 94%);
+  background-color: var(--PaleBlue);
   background-image: url(./images/pattern-background-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-
-}
-
-@media (max-width:375px) {
-  body {
-    background-image: url(./images/pattern-background-mobile.svg);
-  }
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
 }
 
 .mainbox {
-  border-radius: 15px;
-  width: 450px;
-  min-height: 650px;
   position: absolute;
+  width: 450px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 15px;
   background-color: white;
   text-align: center;
-  box-shadow: 0 15px 15px -15px hsl(224, 23%, 55%);
+  box-shadow: 0 15px 15px -15px var(--DesaturatedBlue);
 }
 
 .box {
-  margin: 25px 40px;
+  margin: 30px 45px 50px;
 }
 
 main>img {
@@ -45,19 +47,19 @@ main>img {
 
 .text {
   margin-top: 20px;
-  color: hsl(224, 23%, 55%);
   padding: 0 20px;
   line-height: 25px;
+  color: var(--DesaturatedBlue);
 }
 
 .small-box {
   float: left;
   width: 100%;
   box-sizing: border-box;
-  margin: 25px 0;
+  margin: 25px 0 30px;
   padding: 20px;
-  border-radius: 10px;
-  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  background-color: var(--VeryPaleBlue);
 }
 
 .small-box img {
@@ -72,23 +74,27 @@ main>img {
 
 .plan {
   color: black;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
 .price {
-  color: hsl(224, 23%, 55%);
+  color: var(--DesaturatedBlue);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .change {
   float: right;
-  color: hsl(245, 75%, 52%);
-  line-height: 50px;
-  font-size: 16px;
+  color: var(--BrightBlue);
+  line-height: 60px;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .change:hover {
   text-decoration: none;
-  color: hsl(224, 23%, 55%);
+  color: darkorchid;
 }
 
 button {
@@ -96,32 +102,37 @@ button {
   border: none;
   border-radius: 10px;
   padding: 15px 0;
-  background-color: hsl(245, 75%, 52%);
-  box-shadow: 0 30px 20px -20px hsl(245, 75%, 52%);
+  background-color: var(--BrightBlue);
+  box-shadow: 0 30px 20px -20px var(--BrightBlue);
   color: white;
   font-weight: 900;
+  font-size: 0.90rem;
   cursor: pointer;
   transition: 0.5s;
 }
 
 button:hover {
-  background-color: hsl(224, 23%, 55%);
+  background-color: darkorchid;
 }
 
 .cancel {
   display: block;
-  margin: 30px;
+  margin: 35px 0 0;
   color: hsl(224, 23%, 55%);
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 900;
+  font-size: 0.95rem;
   text-decoration: none;
 }
 
 .cancel:hover {
-  color: hsl(223, 47%, 23%)
+  color: var(--DarkBlue);
 }
 
 @media(max-width:375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
   .mainbox {
     width: 90%;
     min-height: 600px;
