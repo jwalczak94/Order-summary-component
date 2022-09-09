@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,6 +16,10 @@
 
 
 body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--PaleBlue);
   background-image: url(./images/pattern-background-desktop.svg);
   background-size: cover;
@@ -24,15 +29,12 @@ body {
 }
 
 .mainbox {
-  position: absolute;
   width: 450px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 15px;
   background-color: white;
   text-align: center;
   box-shadow: 0 15px 15px -15px var(--DesaturatedBlue);
+  margin: 20px 0;
 }
 
 .box {
@@ -41,6 +43,7 @@ body {
 
 main>img {
   width: 100%;
+  display: block;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -128,14 +131,13 @@ button:hover {
   color: var(--DarkBlue);
 }
 
-@media(max-width:375px) {
+@media(max-width:600px) {
   body {
     background-image: url(./images/pattern-background-mobile.svg);
   }
 
   .mainbox {
     width: 90%;
-    min-height: 600px;
   }
 
   .box {
