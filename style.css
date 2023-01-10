@@ -210,4 +210,22 @@ a {
   .links {
     font-size: 1.4rem;
   }
+
+  .cta {
+    margin: 2rem 0 3.2rem 0;
+  }
+
+  .cta {
+    padding: 2.5rem 2.4rem;
+  }
+
+  .btn-lead {
+    margin-bottom: 3.2rem;
+  }
+
+  .annual-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
 }
