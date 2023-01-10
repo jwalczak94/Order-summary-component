@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -27,13 +28,12 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-
   background-color: var(--PaleBlue);
   background-image: url(./images/pattern-background-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 img {
@@ -189,7 +189,7 @@ a {
 
   .card-component--description {
     padding: 4.5rem 4.8rem 4.8rem 4.8rem;
-  }
+}
 
   .product-title {
     font-size: 2.8rem;
